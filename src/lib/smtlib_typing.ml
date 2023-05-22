@@ -304,7 +304,7 @@ let type_command (env,locals) c =
   | Cmd_GetAssign -> Options.check_command "get-assignement"; env
   | Cmd_GetOption (_keyword) -> Options.check_command "get-option"; env
   | Cmd_GetInfo (_key_info) -> Options.check_command "get-info"; env
-  | Cmd_GetModel -> Options.check_command "get-model"; env
+  | Cmd_GetModel -> env
   | Cmd_GetUnsatAssumptions -> Options.check_command "get-unsat-core"; env
   | Cmd_Reset -> Options.check_command "reset"; env
   | Cmd_ResetAssert -> Options.check_command "reset-assertions"; env
